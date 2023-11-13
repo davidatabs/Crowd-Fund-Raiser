@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Commissioner Mid;
+  src: url(../asset/fonts/Commissioner/static/Commissioner-Light.ttf);
+}
+@font-face {
+  font-family: Commissioner Reg;
+  src: url(../asset/fonts/Commissioner/static/Commissioner-Regular.ttf);
+}
+
+@font-face {
+  font-family: Commissioner Semi-B;
+  src: url(../asset/fonts/Commissioner/static/Commissioner-SemiBold.ttf);
+}
+@font-face {
+  font-family: Commissioner Bold;
+  src: url(../asset/fonts/Commissioner/static/Commissioner-Bold.ttf);
+}
+
+body {
+  font-family: Commissioner Mid;
+  /* max-height: 100vh; */
+  max-width: 100vw;
+  background-color: hsl(150, 17%, 95%);
+}
+
+body header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 350px;
+  padding-block: 2.5rem;
+  padding-inline: 9.2rem;
+  color: white;
+  background: url(../asset/img/image-hero-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+button {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.adCard {
+  padding: 2.5rem;
+  padding-top: 3.5rem;
+  width: 50%;
+  /* height: 35%; */
+  margin-inline: auto;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: white;
+  position: absolute;
+  left: 315px;
+  top: 270px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.131);
+}
+.adCard h1 {
+  padding-bottom: 1rem;
+  font-family: Commissioner Reg;
+}
+.adCard div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.adCardLogo {
+  position: absolute;
+  bottom: 85%;
+  left: 45%;
+}
+
+#backProjectBTN {
+  width: 10rem;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  background-color: hsl(176, 50%, 47%);
+}
+#bookmarkContainer {
+  display: flex;
+  align-items: center;
+  padding-inline-end: 1rem;
+  border-radius: 20px;
+
+  background-color: hsla(176, 50%, 47%, 0.15);
+}
+
+#bookmarkBtn {
+  width: 40px;
+  height: 40px;
+  margin-inline-end: 1rem;
+  border: 0;
+  border-radius: 50%;
+  background: url(../asset/svg/icon-bookmark.svg);
+  background-size: contain;
+}
+
+.donations {
+  padding: 2rem;
+  width: 50%;
+  margin-top: 14.9%;
+  margin-inline: auto;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.131);
+}
+
+.donationContainer {
+  display: flex;
+  justify-content: start;
+  column-gap: 2rem;
+  line-height: 1.35;
+}
+
+.donationContainer div {
+  text-align: start;
+  padding-inline-end: 2rem;
+}
+
+.donationContainer div span {
+  color: hsla(0, 0%, 0%, 0.554);
+}
+
+.donations hr {
+  color: hsla(176, 50%, 47%, 0.453);
+}
+
+.donationBarContainer {
+  width: 95%;
+  height: 0.7rem;
+  border-radius: 1rem;
+  margin-block-start: 2rem;
+  background-color: hsla(176, 50%, 47%, 0.15);
+}
+.donationBar {
+  width: 80%;
+  height: 0.7rem;
+  border-radius: 1rem;
+  background-color: hsl(176, 50%, 47%);
+}
+
+.projectDetails {
+  width: 50%;
+  padding: 2rem;
+  margin-block: 1.2rem;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  border-radius: 0.5rem;
+  color: hsl(176, 72%, 28%);
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.131);
+}
+
+.projectDetails h3 {
+  color: black;
+  padding-bottom: 1.7rem;
+  font-family: Commissioner Reg;
+}
+
+.projectDetails a {
+  color: hsl(176, 50%, 47%);
+}
+
+.item1Block {
+  padding: 1.5rem;
+  margin-block: 1rem;
+  line-height: 1.5;
+  border: 1.5px solid hsla(176, 34%, 71%, 0.858);
+  border-radius: 0.375rem;
+}
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0 1rem;
+}
+.itemTitle {
+  color: black;
+}
+
+.itemFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.itemPrice {
+  display: flex;
+  align-items: center;
+}
+.itemPrice h1 {
+  padding-right: 0.5rem;
+  color: black;
+  font-family: Commissioner Reg;
+}
+
+.itemFooter button {
+  padding-block: 12px;
+  width: 25%;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  background-color: hsl(176, 50%, 47%);
+}
+
+#item3Btn {
+  padding-block: 12px;
+  width: 25%;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  background-color: hsl(176, 50%, 47%);
+}
+
+.item2Block {
+  padding: 1.5rem;
+  margin-block: 1rem;
+  line-height: 1.5;
+  border: 1.5px solid hsla(176, 34%, 71%, 0.858);
+  border-radius: 0.375rem;
+}
+
+.item3Block {
+  padding: 1.5rem;
+  margin-block: 1rem;
+  line-height: 1.5;
+  border: 1.5px solid hsla(176, 34%, 71%, 0.3);
+  border-radius: 0.375rem;
+}
+
+/* ============================= */
+/* ======= Disabled ============ */
+.disabled {
+  background-color: hsla(150, 15%, 95%, 0.008);
+  opacity: 0.9;
+  color: hsla(176, 72%, 28%, 0.3);
+}
+.disabled h4 {
+  color: hsl(0, 0%, 0%, 0.6);
+}
+.disabled span {
+  color: hsl(176, 50%, 47%, 0.65);
+}
+.disabled h1 {
+  color: hsl(0, 0%, 0%, 0.6);
+}
+
+.disabled #item3Btn {
+  cursor: not-allowed;
+  background-color: hsl(0, 0%, 48%, 0.4);
+}
+
+/* ============================= */
+/* ============================= */
+/* ======= Modal Page ========== */
+
+.modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* .modalOverlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+} */
+
+.modalPage {
+  display: block;
+  width: 45%;
+  max-height: 90%;
+  overflow: auto;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.7;
+  border-radius: 0.5rem;
+  color: hsl(176, 72%, 28%);
+  background-color: white;
+}
+.modalPage h3 {
+  color: hsl(0, 0%, 0%);
+  font-family: Commissioner Reg;
+}
+.modalItemTitle {
+  padding-bottom: 1rem;
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
+}
+.modalItemTitle:hover {
+  color: hsl(176, 50%, 47%);
+}
+
+.modalItemContainer {
+  margin-block: 1rem;
+  line-height: 1.5;
+  border: 1.5px solid hsla(176, 34%, 71%, 0.3);
+  border-radius: 0.375rem;
+}
+.modalTopRow {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  border-bottom: 1px solid hsla(176, 34%, 71%, 0.3);
+}
+
+.radioOutline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2rem;
+  width: 18px;
+  height: 18px;
+  border: 1px solid hsla(176, 50%, 47%, 0.414);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.radioCheck {
+  align-self: center;
+  width: 54%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.customCheck {
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  opacity: 0;
+}
+.customCheck:checked ~ .radioCheck {
+  background-color: hsl(176, 50%, 47%);
+}
+
+.modalTopRowHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.modalTopRowHeader div {
+  display: flex;
+  column-gap: 0.75rem;
+}
+.modalTopRowHeader div p {
+  font-size: 14px;
+  font-family: Commissioner Semi-B;
+  color: hsl(176, 50%, 47%);
+  margin-top: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+.modalTopRowHeader span {
+  display: inline-flex;
+  column-gap: 0.5rem;
+}
+.modalTopRowHeader span p {
+  margin-top: 2px;
+}
+
+.modalPledgeInput {
+  display: none;
+  column-gap: 0.75rem;
+  padding: 1.5rem;
+}
+.modalPledgeInput.showModal {
+  display: flex;
+  max-width: max-content;
+}
+.modalPledgeBtn {
+  width: 18%;
+  padding-block: 12px;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  background-color: hsl(176, 50%, 47%);
+}
+
+.modalPledgeAmountInput {
+  width: 15%;
+  padding-block: 10px;
+  padding-inline: 1.1rem;
+  border: 1px solid hsla(176, 50%, 47%, 0.414);
+  border-radius: 50px;
+}
+
+.modalPledgeInputField {
+  width: 55%;
+  border: 0;
+}
+.modalPledgeInputField:focus {
+  outline: 0;
+}
+
+/* ============================= */
+/* ======= Thank-You Page ============ */
+
+.showThanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: 2rem;
+  margin-block: 1.2rem;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  line-height: 2;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: hsl(176, 72%, 28%);
+  background-color: white;
+}
+.showThanks h3 {
+  color: black;
+  margin-top: 1.5rem;
+}
+
+#gotIt {
+  width: 25%;
+  padding-block: 1rem;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  background-color: hsl(176, 50%, 47%);
+  margin-top: 1.5rem;
+}
