@@ -740,6 +740,15 @@ a {
   .modalPledgeBtn {
     width: 50%;
   }
+
+  .showThanks {
+    width: 80%;
+    top: 45%;
+  }
+
+  #gotIt {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 375px) {
